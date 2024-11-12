@@ -24,7 +24,7 @@ docker-compose up -d
 ngrok http 3000 ```
 
 
-Autor
+## Autor
 Carla Paz - Desarrollador/a de la aplicación.
 
 
