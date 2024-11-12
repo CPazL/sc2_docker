@@ -21,8 +21,9 @@ Accede a la URL proporcionada por ngrok en tu navegador para interactuar con la 
 git clone <URL-del-repositorio>
 cd <nombre-del-repositorio>
 docker-compose up -d
-ngrok http 3000 ```
+ngrok http 3000 
+```
 
-
-
+## Uso
+Accede a la URL proporcionada por ngrok en tu navegador para interactuar con la aplicación y probar las funcionalidades CRUD.
 
