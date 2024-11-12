@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build:
+      context: ./docker_frontend-main # Ruta donde se encuentra tu Dockerfile de frontend
+    ports:
+      - "3000:3000"  # Puerto local:Puerto del contenedor
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./docker_backend-main
+    ports:
+      - "4000:4000"  # Puerto local:Puerto del contenedor
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
